@@ -46,14 +46,24 @@
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Akhilesh P">Akhilesh P</h1>
-
-          <p class="title">Penetration Tester</p>
+          <div class="name-wrapper">
+            <h1 class="name" title="Akhilesh P">Akhilesh P</h1>
+            <div class="title-container">
+              <div class="role-wrapper">
+                <span class="role-badge primary">Security Researcher</span>
+                <span class="role-divider">&</span>
+                <span class="role-badge secondary">Penetration Tester</span>
+              </div>
+              <div class="specialty-wrapper">
+                <ion-icon name="shield-half-outline"></ion-icon>
+                <span class="specialty">Specializing in Red Team Operations</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
-
           <ion-icon name="chevron-down"></ion-icon>
         </button>
 
@@ -172,31 +182,23 @@
       -->
 
       <nav class="navbar">
-
         <ul class="navbar-list">
-
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link active" data-nav-link="about">About</button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link="resume">Resume</button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link="portfolio">Achievements</button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link="blog">Blog</button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link="contact">Contact</button>
           </li>
-
         </ul>
-
       </nav>
 
 
@@ -207,23 +209,47 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about active" data-page="about">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
         </header>
 
         <section class="about-text">
-          <p>
-            Hey there! I’m a Penetration Tester hailing from the beautiful state of Kerala, India. My mission? To hunt down and exploit vulnerabilities in web applications and network systems, all while having a blast turning complex security puzzles into simple, effective solutions.
+          <p class="highlight-text">
+            👋 Hey there! I'm a passionate Security Researcher with expertise in uncovering and securing digital vulnerabilities.
           </p>
 
           <p>
-            Picture this: I’m like a digital detective, swooping in to uncover and fix security weak spots to keep your systems safe and sound. 
-            Whether it’s web apps, mobile apps, APIs, or network systems, I dive in headfirst, conducting thorough penetration tests and vulnerability assessments with a personal touch.
+            With over 3 years of experience in cybersecurity, I specialize in:
+          </p>
+          
+          <ul class="expertise-list">
+            <li>🔍 Web Application Security Testing</li>
+            <li>🌐 Network Infrastructure Assessment</li>
+            <li>📱 Mobile Application Security</li>
+            <li>🔐 Active Directory Security</li>
+            <li>🎯 Red Team Operations</li>
+          </ul>
+
+          <p>
+            My mission is to help organizations strengthen their security posture through thorough penetration testing and vulnerability assessments. I bring a methodical approach to identifying security weaknesses and providing actionable solutions.
           </p>
 
-          <p>When I’m on the case, you can expect detailed reports and actionable recommendations, all aimed at boosting your security game. My goal is to shield your assets and data with top-notch, creative security strategies. Over the years, I’ve had the pleasure of working with a variety of organizations, from government agencies to private companies, all in the name of strengthening their cybersecurity defenses.</p>
+          <div class="stats-container">
+            <div class="stat-item">
+              <span class="stat-number">100+</span>
+              <span class="stat-label">Security Assessments</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Vulnerabilities Found</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Industry Certifications</span>
+            </div>
+          </div>
         </section>
 
 
@@ -518,7 +544,7 @@
               <h4 class="h4 timeline-item-title">Cyber Security Analyst</h4>
               <span>Audix India, May 2022 — Aug 2022</span>
               <p class="timeline-text">
-                Conducted vulnerability assessments and penetration testing on web, mobile, API, and network systems. Regularly utilized Nessus for vulnerability assessments, reporting findings to clients. Developed and executed security tests to identify potential vulnerabilities in clients’ systems and collaborated with development teams to provide security recommendations, ensuring the implementation of robust security measures.
+                Conducted vulnerability assessments and penetration testing on web, mobile, API, and network systems. Regularly utilized Nessus for vulnerability assessments, reporting findings to clients. Developed and executed security tests to identify potential vulnerabilities in clients' systems and collaborated with development teams to provide security recommendations, ensuring the implementation of robust security measures.
               </p>
             </li>
       
@@ -565,39 +591,103 @@
         </section>
       
         <section class="skill">
-          <h3 class="h3 skills-title">My skills</h3>
-          <ul class="skills-list content-card">
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Web Application Penetration Testing</h5>
+          <h3 class="h3 skills-title">My Skills</h3>
+          
+          <div class="skills-wrapper">
+            <!-- Technical Skills -->
+            <div class="skills-category">
+              <h4 class="h4 skills-subtitle">Technical Expertise</h4>
+              <ul class="skills-list content-card">
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Web Security Testing</h5>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" style="width: 95%;"></div>
+                    </div>
+                  </div>
+                  <div class="skill-tags">
+                    <span class="tag">OWASP Top 10</span>
+                    <span class="tag">Burp Suite</span>
+                    <span class="tag">XSS</span>
+                    <span class="tag">SQLi</span>
+                  </div>
+                </li>
+
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Network Security</h5>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" style="width: 90%;"></div>
+                    </div>
+                  </div>
+                  <div class="skill-tags">
+                    <span class="tag">Nmap</span>
+                    <span class="tag">Wireshark</span>
+                    <span class="tag">Metasploit</span>
+                  </div>
+                </li>
+
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Mobile App Security</h5>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" style="width: 85%;"></div>
+                    </div>
+                  </div>
+                  <div class="skill-tags">
+                    <span class="tag">Android</span>
+                    <span class="tag">iOS</span>
+                    <span class="tag">MobSF</span>
+                  </div>
+                </li>
+
+                <li class="skills-item">
+                  <div class="title-wrapper">
+                    <h5 class="h5">Active Directory</h5>
+                    <div class="skill-progress-bg">
+                      <div class="skill-progress-fill" style="width: 88%;"></div>
+                    </div>
+                  </div>
+                  <div class="skill-tags">
+                    <span class="tag">Bloodhound</span>
+                    <span class="tag">Mimikatz</span>
+                    <span class="tag">PowerView</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Tools & Technologies -->
+            <div class="skills-category">
+              <h4 class="h4 skills-subtitle">Tools & Technologies</h4>
+              <div class="tools-grid">
+                <div class="tool-item">
+                  <ion-icon name="shield-checkmark-outline"></ion-icon>
+                  <span>Burp Suite Pro</span>
+                </div>
+                <div class="tool-item">
+                  <ion-icon name="scan-outline"></ion-icon>
+                  <span>Nessus</span>
+                </div>
+                <div class="tool-item">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                  <span>Metasploit</span>
+                </div>
+                <div class="tool-item">
+                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                  <span>MobSF</span>
+                </div>
+                <div class="tool-item">
+                  <ion-icon name="git-branch-outline"></ion-icon>
+                  <span>Wireshark</span>
+                </div>
+                <div class="tool-item">
+                  <ion-icon name="terminal-outline"></ion-icon>
+                  <span>Nmap</span>
+                </div>
               </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Network Penetration Testing</h5>
-              </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Active Directory Penetration Testing</h5>
-              </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Windows Application Penetration Testing</h5>
-              </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">API Penetration Testing </h5>
-              </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Red Teaming</h5>
-              </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </section>
         </article>
 
@@ -611,376 +701,390 @@
       -->
 
 <article class="portfolio" data-page="portfolio">
-
   <header>
     <h2 class="h2 article-title">Achievements</h2>
   </header>
 
   <section class="projects">
-
     <ul class="filter-list">
-
       <li class="filter-item">
         <button class="active" data-filter-btn="all">All</button>
       </li>
-
       <li class="filter-item">
         <button data-filter-btn="certifications">Certifications</button>
       </li>
-
       <li class="filter-item">
-        <button data-filter-btn="hall of fame">Hall of Fame</button>
+        <button data-filter-btn="hall-of-fame">Hall of Fame</button>
       </li>
-
       <li class="filter-item">
         <button data-filter-btn="conferences">Conferences</button>
       </li>
-
     </ul>
 
-    <div class="filter-select-box">
-
-      <button class="filter-select" data-select>
-
-        <div class="select-value" data-select-value>Select category</div>
-
-        <div class="select-icon">
-          <ion-icon name="chevron-down"></ion-icon>
+    <div class="achievements-grid">
+      <!-- CPTS Certification -->
+      <div class="achievement-item" data-category="certifications">
+        <div class="achievement-card">
+          <div class="achievement-image">
+            <img src="./assets/images/CPTS.png" alt="HTB CPTS Certification">
+            <div class="achievement-overlay">
+              <a href="https://www.credly.com/badges/dd331917-7bce-4524-88d0-adb9dcde2108/linked_in_profile" class="view-btn">
+                <ion-icon name="eye-outline"></ion-icon>
+                View Certificate
+              </a>
+            </div>
+          </div>
+          <div class="achievement-content">
+            <h3>Certified Penetration Testing Specialist</h3>
+            <p>hackthebox | HTB CPTS | 2024</p>
+            <div class="achievement-tags">
+              <span class="tag">Penetration Testing</span>
+              <span class="tag">Active Directory</span>
+            </div>
+          </div>
         </div>
+      </div>
 
-      </button>
+      <!-- CRTP Certification -->
+      <div class="achievement-item" data-category="certifications">
+        <div class="achievement-card">
+          <div class="achievement-image">
+            <img src="./assets/images/CRTP.jpeg" alt="CRTP Certification">
+            <div class="achievement-overlay">
+              <a href="https://www.credential.net/defc43dd-e16b-4c2f-9a6d-b20a3e4633ac" class="view-btn">
+                <ion-icon name="eye-outline"></ion-icon>
+                View Certificate
+              </a>
+            </div>
+          </div>
+          <div class="achievement-content">
+            <h3>Certified Red Team Professional</h3>
+            <p>altered security | CRTP | 2024</p>
+            <div class="achievement-tags">
+              <span class="tag">Red Teaming</span>
+              <span class="tag">Active Directory</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <ul class="select-list">
+      <!-- CNSSP Certification -->
+      <div class="achievement-item" data-category="certifications">
+        <div class="achievement-card">
+          <div class="achievement-image">
+            <img src="./assets/images/CNSP.png" alt="CNSSP Certification">
+            <div class="achievement-overlay">
+              <a href="https://www.credential.net/be9caa03-b534-485e-a027-16a9af06d2ce" class="view-btn">
+                <ion-icon name="eye-outline"></ion-icon>
+                View Certificate
+              </a>
+            </div>
+          </div>
+          <div class="achievement-content">
+            <h3>Certified Network Security Specialist</h3>
+            <p>The SecOps Group | CNSSP | 2025</p>
+            <div class="achievement-tags">
+              <span class="tag">Network Security</span>
+              <span class="tag">Security Assessment</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <li class="select-item">
-          <button data-select-item="all">All</button>
-        </li>
+      <!-- CAP Certification -->
+      <div class="achievement-item" data-category="certifications">
+        <div class="achievement-card">
+          <div class="achievement-image">
+            <img src="./assets/images/certification-3.png" alt="CAP Certification">
+            <div class="achievement-overlay">
+              <a href="https://www.credential.net/be9caa03-b534-485e-a027-16a9af06d2ce" class="view-btn">
+                <ion-icon name="eye-outline"></ion-icon>
+                View Certificate
+              </a>
+            </div>
+          </div>
+          <div class="achievement-content">
+            <h3>Certified Application Pentester</h3>
+            <p>The SecOps Group | CAP | 2020</p>
+            <div class="achievement-tags">
+              <span class="tag">Web Security</span>
+              <span class="tag">Application Security</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <li class="select-item">
-          <button data-select-item="certifications">Certifications</button>
-        </li>
+      <!-- CPT Certification -->
+      <div class="achievement-item" data-category="certifications">
+        <div class="achievement-card">
+          <div class="achievement-image">
+            <img src="./assets/images/certification-4.png" alt="CPT Certification">
+            <div class="achievement-overlay">
+              <a href="https://www.credential.net/4394c16d-e4da-4cec-a7f0-23970caf477e" class="view-btn">
+                <ion-icon name="eye-outline"></ion-icon>
+                View Certificate
+              </a>
+            </div>
+          </div>
+          <div class="achievement-content">
+            <h3>Certified Penetration Tester</h3>
+            <p>Red Team Hacker Academy | CPT</p>
+            <div class="achievement-tags">
+              <span class="tag">Penetration Testing</span>
+              <span class="tag">Ethical Hacking</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <li class="select-item">
-          <button data-select-item="hall of fame">Hall of Fame</button>
-        </li>
+      <!-- LinkedIn Certification -->
+      <div class="achievement-item" data-category="certifications">
+        <div class="achievement-card">
+          <div class="achievement-image">
+            <img src="./assets/images/certification-6.png" alt="LinkedIn Certification">
+            <div class="achievement-overlay">
+              <a href="https://www.credential.net/b6e9d868-612a-4800-8ed6-7e6ae8fb260e" class="view-btn">
+                <ion-icon name="eye-outline"></ion-icon>
+                View Certificate
+              </a>
+            </div>
+          </div>
+          <div class="achievement-content">
+            <h3>Advanced Kali Linux</h3>
+            <p>LinkedIn Learning | 2020</p>
+            <div class="achievement-tags">
+              <span class="tag">Kali Linux</span>
+              <span class="tag">Penetration Testing</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <li class="select-item">
-          <button data-select-item="conferences">Conferences</button>
-        </li>
+      <!-- Cybrary Certification -->
+      <div class="achievement-item" data-category="certifications">
+        <div class="achievement-card">
+          <div class="achievement-image">
+            <img src="./assets/images/certification-5.png" alt="Cybrary Certification">
+            <div class="achievement-overlay">
+              <a href="https://www.credential.net/544715ce-51c7-483c-b89e-41a24f2ad8ba" class="view-btn">
+                <ion-icon name="eye-outline"></ion-icon>
+                View Certificate
+              </a>
+            </div>
+          </div>
+          <div class="achievement-content">
+            <h3>Penetration Testing and Ethical Hacking</h3>
+            <p>Cybrary | 2018</p>
+            <div class="achievement-tags">
+              <span class="tag">Ethical Hacking</span>
+              <span class="tag">Security Testing</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      </ul>
+      <!-- Hall of Fame -->
+      <div class="achievement-item" data-category="hall-of-fame">
+        <div class="achievement-card">
+          <div class="achievement-image">
+            <img src="./assets/images/hof2.jpg" alt="Bug Discover Event">
+            <div class="achievement-overlay">
+              <a href="#" class="view-btn">
+                <ion-icon name="trophy-outline"></ion-icon>
+                View Achievement
+              </a>
+            </div>
+          </div>
+          <div class="achievement-content">
+            <h3>Live Hacking Event - Rank 5</h3>
+            <p>Bug Discover</p>
+            <div class="achievement-tags">
+              <span class="tag">Live Hacking</span>
+              <span class="tag">Bug Bounty</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Conferences -->
+      <div class="achievement-item" data-category="conferences">
+        <div class="achievement-card">
+          <div class="achievement-image">
+            <img src="./assets/images/conference-1.jpeg" alt="Defcon Delhi 2023">
+            <div class="achievement-overlay">
+              <a href="#" class="view-btn">
+                <ion-icon name="people-outline"></ion-icon>
+                View Details
+              </a>
+            </div>
+          </div>
+          <div class="achievement-content">
+            <h3>Defcon Delhi 2023</h3>
+            <p>Security Conference Attendance</p>
+            <div class="achievement-tags">
+              <span class="tag">Conference</span>
+              <span class="tag">Networking</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <ul class="project-list">
-
-      <li class="project-item active" data-filter-item data-category="certifications">
-        <a href="https://www.credly.com/badges/dd331917-7bce-4524-88d0-adb9dcde2108/linked_in_profile">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/CPTS.png" alt="Certified Penetration Testing Specialist" loading="lazy">
-          </figure>
-
-          <h3 class="project-title">hackthebox | HTB CPTS | 2024</h3>
-
-          <p class="project-category">Certifications</p>
-
-        </a>
-      </li>
-      
-      <li class="project-item active" data-filter-item data-category="certifications">
-        <a href="https://www.credential.net/be9caa03-b534-485e-a027-16a9af06d2ce?username=akhileshp906057">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/CNSP.png" alt="Certified Penetration Testing Specialist" loading="lazy">
-          </figure>
-
-          <h3 class="project-title">The SecOps Group | CNSSP | 2025</h3>
-
-          <p class="project-category">Certifications</p>
-
-        </a>
-      </li>
-
-      <li class="project-item active" data-filter-item data-category="certifications">
-        <a href="https://www.credential.net/defc43dd-e16b-4c2f-9a6d-b20a3e4633ac#gs.d48jm6">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/CRTP.jpeg" alt="Hack The Box Cyber Range" loading="lazy">
-          </figure>
-
-          <h3 class="project-title">altered security | CRTP | 2024</h3>
-
-          <p class="project-category">Certifications</p>
-
-        </a>
-      </li>
-      
-      <li class="project-item active" data-filter-item data-category="certifications">
-        <a href="https://www.credential.net/be9caa03-b534-485e-a027-16a9af06d2ce?username=akhileshp906057#gs.d48i8q">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/certification-3.png" alt="Hack The Box Cyber Range" loading="lazy">
-          </figure>
-
-          <h3 class="project-title">The SecOps Group | CAP | 2020 </h3>
-
-          <p class="project-category">Certifications</p>
-
-        </a>
-      </li>
-
-      <li class="project-item active" data-filter-item data-category="certifications">
-        <a href="https://www.credential.net/4394c16d-e4da-4cec-a7f0-23970caf477e?username=akhileshp906057#gs.d48lum">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/certification-4.png" alt="Hack The Box Cyber Range" loading="lazy">
-          </figure>
-          <h3 class="project-title">Red Team Hacker Academy | CPT</h3>
-          <p class="project-category">Certifications</p>
-
-        </a>
-      </li>
-
-      <li class="project-item active" data-filter-item data-category="certifications">
-        <a href="https://www.credential.net/b6e9d868-612a-4800-8ed6-7e6ae8fb260e?username=akhileshp906057#gs.d4bhht">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/certification-6.png" alt="Hack The Box Cyber Range" loading="lazy">
-          </figure>
-          <h3 class="project-title">Linkedin | Penetration Testing: Advanced Kali Linux | 2020</h3>
-          <p class="project-category">Certifications</p>
-
-        </a>
-      </li>
-
-      <!-- <li class="project-item active" data-filter-item data-category="certifications">
-        <a href="#">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/certification-6.png" alt="Hack The Box Cyber Range" loading="lazy">
-          </figure>
-          <h3 class="project-title">Linkedin | 2020 | Penetration Testing: Advanced Kali Linux</h3>
-          <p class="project-category">Certifications</p>
-        </a>
-      </li> -->
-
-      <li class="project-item active" data-filter-item data-category="certifications">
-        <a href="https://www.credential.net/544715ce-51c7-483c-b89e-41a24f2ad8ba?username=akhileshp906057#gs.d4bjb6">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/certification-5.png" alt="Hack The Box Cyber Range" loading="lazy">
-          </figure>
-          <h3 class="project-title"> Cybrary | Penetration Testing and Ethical Hacking | 2018</h3>
-          <p class="project-category">Certifications</p>
-
-        </a>
-      </li>
-
-
-      <!-- <li class="project-item active" data-filter-item data-category="certifications">
-        <a href="#">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/certification-7.png" alt="Hack The Box Cyber Range" loading="lazy">
-          </figure>
-          <h3 class="project-title"> Udemey | Bug Bounty Hunting and Web Application Hacking</h3>
-          <p class="project-category">Certifications</p>
-
-        </a>
-      </li> -->
-
-
-
-      <li class="project-item active" data-filter-item data-category="hall of fame">
-        <a href="#">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/hof2.jpg" alt="Bug Discover" loading="lazy">
-          </figure>
-
-          <h3 class="project-title">Bug Discover | Live Hacking Event - Rank 5 </h3>
-
-          <p class="project-category">Hall of Fame</p>
-
-        </a>
-      </li>
-
-      <li class="project-item active" data-filter-item data-category="hall of fame">
-        <a href="https://app.hackthebox.com/profile/277231">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/hof4.png" alt="HackTheBox" loading="lazy">
-          </figure>
-
-          <h3 class="project-title">hackthebox | solved 100 + machines in hackthebox </h3>
-
-          <p class="project-category">Hall of Fame</p>
-
-        </a>
-      </li>
-
-      <li class="project-item active" data-filter-item data-category="hall of fame">
-        <a href="https://tryhackme.com/p/adz">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/hof5.png" alt="tryHackMe" loading="lazy">
-          </figure>
-
-          <h3 class="project-title">tryHackMe | solved 100 + machines in tryHackMe </h3>
-
-          <p class="project-category">Hall of Fame</p>
-
-        </a>
-      </li>
-
-      <li class="project-item active" data-filter-item data-category="hall of fame">
-        <a href="#">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/hof3.jpg" alt="Microsoft Hall of Fame" loading="lazy">
-          </figure>
-
-          <h3 class="project-title">C3ihub, IIT Kanpur  | CTF - Rank 5 </h3>
-
-          <p class="project-category">Hall of Fame</p>
-
-        </a>
-      </li>
-
-      <li class="project-item active" data-filter-item data-category="conferences">
-        <a href="#">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/conference-1.jpeg" alt="Defcon Delhi 2023" loading="lazy">
-          </figure>
-
-          <h3 class="project-title">Defcon Delhi 2023</h3>
-
-          <p class="project-category">Conferences</p>
-
-        </a>
-      </li>
-
-      <li class="project-item active" data-filter-item data-category="conferences">
-        <a href="#">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/conference-2.JPG" alt="Seasides Conference Goa 2022" loading="lazy">
-          </figure>
-
-          <h3 class="project-title">Seasides Conference Goa 2022</h3>
-
-          <p class="project-category">Conferences</p>
-
-        </a>
-      </li>
-
-    </ul>
-
   </section>
-
 </article>
 
+<style>
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.achievement-card {
+  background: var(--border-gradient-onyx);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+}
+
+.achievement-image {
+  position: relative;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+.achievement-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.achievement-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.achievement-card:hover .achievement-overlay {
+  opacity: 1;
+}
+
+.view-btn {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: var(--primary);
+  transition: background 0.3s ease;
+}
+
+.view-btn:hover {
+  background: var(--primary-darker);
+}
+
+.achievement-content {
+  padding: 20px;
+}
+
+.achievement-content h3 {
+  color: var(--white);
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+.achievement-content p {
+  color: var(--light-gray);
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.achievement-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.achievement-tags .tag {
+  background: var(--jet);
+  color: var(--light-gray);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.85em;
+}
+
+.filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.filter-item button {
+  background: var(--jet);
+  color: var(--light-gray);
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-item button.active,
+.filter-item button:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .filter-list {
+    justify-content: center;
+  }
+}
+</style>
+
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const filterButtons = document.querySelectorAll('[data-filter-btn]');
-    const filterItems = document.querySelectorAll('[data-filter-item]');
-    const selectButtons = document.querySelectorAll('[data-select-item]');
+document.addEventListener('DOMContentLoaded', () => {
+  const filterButtons = document.querySelectorAll('[data-filter-btn]');
+  const achievementItems = document.querySelectorAll('.achievement-item');
 
-    filterButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const category = button.getAttribute('data-filter-btn');
-
-        filterItems.forEach(item => {
-          if (category === 'all' || item.getAttribute('data-category') === category) {
-            item.style.display = 'block';
-          } else {
-            item.style.display = 'none';
-          }
-        });
-
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-      });
-    });
-
-    selectButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const category = button.getAttribute('data-select-item');
-
-        filterItems.forEach(item => {
-          if (category === 'all' || item.getAttribute('data-category') === category) {
-            item.style.display = 'block';
-          } else {
-            item.style.display = 'none';
-          }
-        });
-
-        document.querySelector('.filter-select .select-value').textContent = button.textContent;
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const category = button.getAttribute('data-filter-btn');
+      
+      // Update active button
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      
+      // Filter items
+      achievementItems.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
       });
     });
   });
+});
 </script>
 
 
@@ -1238,6 +1342,259 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <style>
+    .subtitle {
+      color: var(--light-gray);
+      font-size: 0.9em;
+      margin-top: 5px;
+    }
+
+    .highlight-text {
+      font-size: 1.2em;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .expertise-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 20px 0;
+    }
+
+    .expertise-list li {
+      margin: 10px 0;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .stats-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .stat-item {
+      text-align: center;
+      flex: 1;
+      min-width: 150px;
+      padding: 20px;
+      background: var(--border-gradient-onyx);
+      border-radius: 12px;
+    }
+
+    .stat-number {
+      display: block;
+      font-size: 1.8em;
+      font-weight: bold;
+      color: var(--primary);
+      margin-bottom: 5px;
+    }
+
+    .stat-label {
+      font-size: 0.9em;
+      color: var(--light-gray);
+    }
+
+    .skills-wrapper {
+      display: grid;
+      gap: 30px;
+    }
+
+    .skills-category {
+      background: var(--border-gradient-onyx);
+      padding: 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+    }
+
+    .skills-subtitle {
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .skill-progress-bg {
+      background: var(--jet);
+      width: 100%;
+      height: 6px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .skill-progress-fill {
+      background: var(--primary);
+      height: 100%;
+      border-radius: 10px;
+      transition: width 0.3s ease;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .tag {
+      background: var(--jet);
+      color: var(--light-gray);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.85em;
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+    }
+
+    .tool-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--jet);
+      padding: 12px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .tool-item:hover {
+      transform: translateY(-2px);
+    }
+
+    .tool-item ion-icon {
+      font-size: 1.4em;
+      color: var(--primary);
+    }
+
+    @media (min-width: 768px) {
+      .skills-wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Elements
+    const navigationLinks = document.querySelectorAll('[data-nav-link]');
+    const pages = document.querySelectorAll('[data-page]');
+
+    // Page switching
+    const navigateToPage = (targetPage) => {
+      // Hide all pages
+      pages.forEach(page => {
+        page.classList.remove('active');
+      });
+
+      // Remove active class from all nav links
+      navigationLinks.forEach(link => {
+        link.classList.remove('active');
+      });
+
+      // Show target page and activate corresponding nav link
+      const selectedPage = document.querySelector(`[data-page="${targetPage}"]`);
+      const selectedLink = document.querySelector(`[data-nav-link="${targetPage}"]`);
+
+      if (selectedPage && selectedLink) {
+        selectedPage.classList.add('active');
+        selectedLink.classList.add('active');
+      }
+
+      // Scroll to top
+      window.scrollTo(0, 0);
+    };
+
+    // Add click handlers to navigation links
+    navigationLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        const targetPage = link.getAttribute('data-nav-link');
+        navigateToPage(targetPage);
+      });
+    });
+
+    // Handle direct links and browser history
+    const handleDirectNavigation = () => {
+      const hash = window.location.hash.slice(1) || 'about';
+      navigateToPage(hash);
+    };
+
+    window.addEventListener('hashchange', handleDirectNavigation);
+    handleDirectNavigation(); // Handle initial page load
+  });
+
+  // Update URL when switching pages
+  const updateURL = (page) => {
+    const url = new URL(window.location);
+    url.hash = page;
+    window.history.pushState({}, '', url);
+  };
+
+  // Add smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = anchor.getAttribute('href').slice(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+  </script>
+
+  <style>
+  /* Add these styles to handle page transitions */
+  [data-page] {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  [data-page].active {
+    display: block;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Update navbar styles */
+  .navbar-link {
+    position: relative;
+    transition: color 0.3s;
+  }
+
+  .navbar-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: width 0.3s;
+  }
+
+  .navbar-link:hover::after,
+  .navbar-link.active::after {
+    width: 100%;
+  }
+
+  /* Active state styles */
+  .navbar-link.active {
+    color: var(--primary);
+  }
+  </style>
 
 </body>
 
